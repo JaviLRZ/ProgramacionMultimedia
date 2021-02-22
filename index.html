@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/sweetalert2.all.min.js"></script>
+  
+
+<title>Formulario del Tiempo</title>
+
+</head>
+
+<body background="images/paisaje.jpg" >
+  
+
+    <div class="container">
+        <div class="row">
+            <h2 style="margin-top: 5%; color: white;">Formularios</h2>
+
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-10">
+      <label for="validationCustom01" class="form-label" style="color: white;">Nombre</label>
+      <input onclick="changeStyle(this.id)" type="text" class="form-control namegetter" id="name" placeholder="Introduzca un Nombre">
+    </div>
+
+    <div class="col-md-6" style="color: white;">
+      <label for="validationCustom01" class="form-label textForms">Ciudad</label>           
+      <input type="text" value="" class=" search-bar form-control fields" placeholder="Introduzca Una Ciudad" >           
+    </div>
+
+    <div class="col-md-4">
+      <label for="opciones" class="form-label" style="color: white;">Pais</label>
+      <select  onclick="changeStyle(this.id)" class="form-select optionsgetter" id="opciones" >
+        <option selected disabled value="">...</option>
+        <option>España</option>
+        <option>Andorra</option>
+        <option>Portugal</option>
+        <option>Francia</option>
+        <option>Alemania</option>
+      </select>
+    </div>
+
+      <div class="col-md-12" >        
+        <button  type="button" onclick="search()" class=" search_button btn btn-dark">Dame El Tiempo</button>       
+      </div>  
+    </form>
+  </div>
+</div>
+
+    <div style="color: white; text-align: center;">
+      <img src="" alt="" class="icon"/>
+      <p class ="city"></p>
+      <p class ="temp"></p>
+      <p class ="temp_min"></p>
+      <p class ="temp_max"></p>
+    </div>
+  </body>
+  </html>
